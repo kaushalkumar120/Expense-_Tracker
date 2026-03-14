@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SwiftSpend | Expense Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>💰 SwiftSpend</h1>
+
+<div class="balance-box">
+<p>Total Expenses</p>
+<h2 id="total">$0.00</h2>
+</div>
+
+<div class="filter-section">
+
+<input type="month" id="month-filter">
+
+<button id="export-btn">Export CSV</button>
+
+</div>
+
+</header>
+
+
+<section class="input-section">
+
+<form id="expense-form">
+
+<input type="text" id="desc" placeholder="Expense Title">
+
+<input type="number" id="amount" placeholder="Amount">
+
+<input type="date" id="date">
+
+<select id="category">
+<option value="">Select Category</option>
+<option>Food</option>
+<option>Travel</option>
+<option>Shopping</option>
+<option>Bills</option>
+<option>Entertainment</option>
+<option>Other</option>
+</select>
+
+<button type="submit">Add Expense</button>
+
+</form>
+
+</section>
+
+<section class="expense-section">
+
+<h3>Transactions</h3>
+
+<ul id="expense-list"></ul>
+
+<div id="empty">
+No expenses yet. Add your first expense.
+</div>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
